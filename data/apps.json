@@ -1,11 +1,292 @@
-{"categories":["بازی","ابزار","آموزش","شبکه اجتماعی","مالی","سرگرمی"],
-"apps":[
-{"id":"skyrunner","name":"اسکای‌رانر","dev":"استودیو ابر","cat":"بازی","icon":"🚀","color":"#6C5CE7","rating":4.7,"size":"48 MB","ver":"2.3.1","updated":"1405/06/20","downloads":"120K","featured":true,"desc":"بازی دونده در آسمان با مراحل بی‌پایان و رقابت هفتگی.","dl":"#"},
-{"id":"notely","name":"نوتلی","dev":"تیم کدنست","cat":"ابزار","icon":"📝","color":"#17C3B2","rating":4.8,"size":"12 MB","ver":"1.9.0","updated":"1405/07/01","downloads":"85K","featured":true,"desc":"یادداشت‌برداری سریع با همگام‌سازی و حالت شب.","dl":"#"},
-{"id":"learnly","name":"لرنلی","dev":"آموزشگاه پویا","cat":"آموزش","icon":"🎓","color":"#FF9F43","rating":4.5,"size":"31 MB","ver":"3.0.2","updated":"1405/05/11","downloads":"60K","featured":true,"desc":"دوره‌های کوتاه برنامه‌نویسی و زبان با تمرین روزانه.","dl":"#"},
-{"id":"chatbox","name":"چت‌باکس","dev":"پیام‌گستر","cat":"شبکه اجتماعی","icon":"💬","color":"#FF4D6D","rating":4.3,"size":"25 MB","ver":"5.4.0","updated":"1405/06/30","downloads":"210K","desc":"پیام‌رسان سبک با گروه‌های ۵۰۰ نفره.","dl":"#"},
-{"id":"walletly","name":"والتلی","dev":"مالی‌نو","cat":"مالی","icon":"💳","color":"#0984E3","rating":4.6,"size":"18 MB","ver":"2.1.5","updated":"1405/07/03","downloads":"95K","desc":"مدیریت هزینه و بودجه ماهانه با نمودار.","dl":"#"},
-{"id":"tunewave","name":"تیون‌ویو","dev":"صدای نو","cat":"سرگرمی","icon":"🎧","color":"#A55EEA","rating":4.4,"size":"40 MB","ver":"1.2.8","updated":"1405/04/22","downloads":"70K","desc":"پخش موسیقی آفلاین با اکولایزر.","dl":"#"},
-{"id":"puzzlex","name":"پازل‌ایکس","dev":"استودیو ابر","cat":"بازی","icon":"🧩","color":"#00B894","rating":4.2,"size":"22 MB","ver":"1.0.9","updated":"1405/03/15","downloads":"33K","desc":"بیش از ۵۰۰ پازل منطقی از ساده تا سخت.","dl":"#"},
-{"id":"scanpro","name":"اسکن‌پرو","dev":"تیم کدنست","cat":"ابزار","icon":"📷","color":"#E17055","rating":4.6,"size":"15 MB","ver":"4.0.0","updated":"1405/07/05","downloads":"140K","desc":"اسکن سند و ساخت PDF در چند ثانیه.","dl":"#"}
-]}
+{
+ "categories": [
+  "شبکه اجتماعی",
+  "پیام‌رسان",
+  "ویدیو و موسیقی",
+  "ابزار",
+  "کار و بهره‌وری",
+  "آموزش",
+  "بازی"
+ ],
+ "apps": [
+  {
+   "id": "youtube",
+   "name": "یوتیوب",
+   "dev": "Google",
+   "cat": "ویدیو و موسیقی",
+   "icon": "▶️",
+   "color": "#FF0000",
+   "desc": "تماشا و آپلود ویدیو، پخش زنده و اشتراک در کانال‌ها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
+   "official": true,
+   "featured": true
+  },
+  {
+   "id": "whatsapp",
+   "name": "واتساپ",
+   "dev": "WhatsApp LLC",
+   "cat": "پیام‌رسان",
+   "icon": "💬",
+   "color": "#25D366",
+   "desc": "پیام‌رسان و تماس صوتی و تصویری رایگان.",
+   "dl": "https://play.google.com/store/apps/details?id=com.whatsapp",
+   "official": true,
+   "featured": true
+  },
+  {
+   "id": "facebook",
+   "name": "فیسبوک",
+   "dev": "Meta",
+   "cat": "شبکه اجتماعی",
+   "icon": "👍",
+   "color": "#1877F2",
+   "desc": "ارتباط با دوستان، گروه‌ها و صفحه‌ها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.facebook.katana",
+   "official": true,
+   "featured": true
+  },
+  {
+   "id": "instagram",
+   "name": "اینستاگرام",
+   "dev": "Meta",
+   "cat": "شبکه اجتماعی",
+   "icon": "📸",
+   "color": "#E1306C",
+   "desc": "اشتراک عکس، ریلز و استوری.",
+   "dl": "https://play.google.com/store/apps/details?id=com.instagram.android",
+   "official": true,
+   "featured": true
+  },
+  {
+   "id": "messenger",
+   "name": "مسنجر",
+   "dev": "Meta",
+   "cat": "پیام‌رسان",
+   "icon": "🗨️",
+   "color": "#0099FF",
+   "desc": "چت و تماس با دوستان فیسبوک.",
+   "dl": "https://play.google.com/store/apps/details?id=com.facebook.orca",
+   "official": true
+  },
+  {
+   "id": "telegram",
+   "name": "تلگرام",
+   "dev": "Telegram FZ-LLC",
+   "cat": "پیام‌رسان",
+   "icon": "✈️",
+   "color": "#2AABEE",
+   "desc": "پیام‌رسان سریع با کانال، گروه و ربات.",
+   "dl": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
+   "official": true
+  },
+  {
+   "id": "tiktok",
+   "name": "تیک‌تاک",
+   "dev": "TikTok Pte.",
+   "cat": "ویدیو و موسیقی",
+   "icon": "🎵",
+   "color": "#111111",
+   "desc": "ویدیوهای کوتاه و ترندهای روز.",
+   "dl": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
+   "official": true
+  },
+  {
+   "id": "x",
+   "name": "ایکس (توییتر)",
+   "dev": "X Corp.",
+   "cat": "شبکه اجتماعی",
+   "icon": "✖️",
+   "color": "#000000",
+   "desc": "اخبار و گفتگوی لحظه‌ای.",
+   "dl": "https://play.google.com/store/apps/details?id=com.twitter.android",
+   "official": true
+  },
+  {
+   "id": "snapchat",
+   "name": "اسنپ‌چت",
+   "dev": "Snap Inc.",
+   "cat": "شبکه اجتماعی",
+   "icon": "👻",
+   "color": "#FFFC00",
+   "desc": "ارسال اسنپ و استفاده از فیلترها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.snapchat.android",
+   "official": true
+  },
+  {
+   "id": "spotify",
+   "name": "اسپاتیفای",
+   "dev": "Spotify AB",
+   "cat": "ویدیو و موسیقی",
+   "icon": "🎧",
+   "color": "#1DB954",
+   "desc": "موسیقی و پادکست آنلاین.",
+   "dl": "https://play.google.com/store/apps/details?id=com.spotify.music",
+   "official": true
+  },
+  {
+   "id": "netflix",
+   "name": "نتفلیکس",
+   "dev": "Netflix",
+   "cat": "ویدیو و موسیقی",
+   "icon": "🎬",
+   "color": "#E50914",
+   "desc": "فیلم و سریال (نیاز به اشتراک).",
+   "dl": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
+   "official": true
+  },
+  {
+   "id": "chrome",
+   "name": "کروم",
+   "dev": "Google",
+   "cat": "ابزار",
+   "icon": "🌐",
+   "color": "#4285F4",
+   "desc": "مرورگر سریع گوگل.",
+   "dl": "https://play.google.com/store/apps/details?id=com.android.chrome",
+   "official": true
+  },
+  {
+   "id": "maps",
+   "name": "نقشه گوگل",
+   "dev": "Google",
+   "cat": "ابزار",
+   "icon": "🗺️",
+   "color": "#34A853",
+   "desc": "نقشه، مسیریابی و ترافیک.",
+   "dl": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+   "official": true
+  },
+  {
+   "id": "gmail",
+   "name": "جیمیل",
+   "dev": "Google",
+   "cat": "کار و بهره‌وری",
+   "icon": "✉️",
+   "color": "#EA4335",
+   "desc": "ایمیل گوگل روی موبایل.",
+   "dl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
+   "official": true
+  },
+  {
+   "id": "photos",
+   "name": "گوگل فوتوز",
+   "dev": "Google",
+   "cat": "ابزار",
+   "icon": "🖼️",
+   "color": "#FBBC05",
+   "desc": "پشتیبان‌گیری و مرتب‌سازی عکس‌ها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
+   "official": true
+  },
+  {
+   "id": "translate",
+   "name": "گوگل ترنسلیت",
+   "dev": "Google",
+   "cat": "ابزار",
+   "icon": "🈯",
+   "color": "#4285F4",
+   "desc": "ترجمه متن، صدا و تصویر.",
+   "dl": "https://play.google.com/store/apps/details?id=com.google.android.apps.translate",
+   "official": true
+  },
+  {
+   "id": "zoom",
+   "name": "زوم",
+   "dev": "Zoom",
+   "cat": "کار و بهره‌وری",
+   "icon": "🎥",
+   "color": "#2D8CFF",
+   "desc": "جلسات ویدیویی آنلاین.",
+   "dl": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings",
+   "official": true
+  },
+  {
+   "id": "teams",
+   "name": "مایکروسافت تیمز",
+   "dev": "Microsoft",
+   "cat": "کار و بهره‌وری",
+   "icon": "👥",
+   "color": "#6264A7",
+   "desc": "چت و جلسه برای تیم‌ها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.microsoft.teams",
+   "official": true
+  },
+  {
+   "id": "linkedin",
+   "name": "لینکدین",
+   "dev": "LinkedIn",
+   "cat": "کار و بهره‌وری",
+   "icon": "💼",
+   "color": "#0A66C2",
+   "desc": "شبکه حرفه‌ای و فرصت شغلی.",
+   "dl": "https://play.google.com/store/apps/details?id=com.linkedin.android",
+   "official": true
+  },
+  {
+   "id": "discord",
+   "name": "دیسکورد",
+   "dev": "Discord",
+   "cat": "پیام‌رسان",
+   "icon": "🎮",
+   "color": "#5865F2",
+   "desc": "چت صوتی و متنی برای جامعه‌ها و گیمرها.",
+   "dl": "https://play.google.com/store/apps/details?id=com.discord",
+   "official": true
+  },
+  {
+   "id": "signal",
+   "name": "سیگنال",
+   "dev": "Signal Foundation",
+   "cat": "پیام‌رسان",
+   "icon": "🔒",
+   "color": "#3A76F0",
+   "desc": "پیام‌رسان متن‌باز با رمزنگاری.",
+   "dl": "https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms",
+   "official": true
+  },
+  {
+   "id": "reddit",
+   "name": "ردیت",
+   "dev": "Reddit",
+   "cat": "شبکه اجتماعی",
+   "icon": "🤖",
+   "color": "#FF4500",
+   "desc": "انجمن‌های موضوعی و بحث.",
+   "dl": "https://play.google.com/store/apps/details?id=com.reddit.frontpage",
+   "official": true
+  },
+  {
+   "id": "pinterest",
+   "name": "پینترست",
+   "dev": "Pinterest",
+   "cat": "شبکه اجتماعی",
+   "icon": "📌",
+   "color": "#E60023",
+   "desc": "ایده و الهام تصویری.",
+   "dl": "https://play.google.com/store/apps/details?id=com.pinterest",
+   "official": true
+  },
+  {
+   "id": "duolingo",
+   "name": "دوولینگو",
+   "dev": "Duolingo",
+   "cat": "آموزش",
+   "icon": "🦉",
+   "color": "#58CC02",
+   "desc": "یادگیری زبان با تمرین روزانه.",
+   "dl": "https://play.google.com/store/apps/details?id=com.duolingo",
+   "official": true
+  },
+  {
+   "id": "clash",
+   "name": "کلش آو کلنز",
+   "dev": "Supercell",
+   "cat": "بازی",
+   "icon": "⚔️",
+   "color": "#F5A623",
+   "desc": "بازی استراتژی ساخت دهکده.",
+   "dl": "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+   "official": true
+  }
+ ]
+}
