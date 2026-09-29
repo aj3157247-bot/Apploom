@@ -10,10 +10,10 @@ function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('o
 
 function view() {
   const q = st.q.trim().toLowerCase();
-  let l = st.apps.filter(a => (st.cat === 'همه' || a.cat === st.cat) && (!q || (a.name + a.dev + a.cat + a.desc).toLowerCase().includes(q)));
-  const s = { pop: (a, b) => num(b.downloads) - num(a.downloads), rate: (a, b) => b.rating - a.rating, new: (a, b) => b.updated.localeCompare(a.updated), name: (a, b) => a.name.localeCompare(b.name, 'fa') }[st.sort];
+  let l = st.apps.filter(a => (st.cat === 'همه' || a.cat === st.cat) && (!q || (a.name + a.dev + a.cat + a.desc + a.id).toLowerCase().includes(q)));
+  const s = { pop: (a, b) => num(b.downloads || 0) - num(a.downloads || 0), rate: (a, b) => (b.rating || 0) - (a.rating || 0), new: (a, b) => (b.updated || '').localeCompare(a.updated || ''), name: (a, b) => a.name.localeCompare(b.name, 'fa') }[st.sort];
   l.sort(s);
-  $('#grid').innerHTML = l.map(a => `<button class="card" data-id="${esc(a.id)}"><span class="ico" style="background:${grad(a.color)}">${esc(a.icon)}</span><span><h3>${esc(a.name)}</h3><span class="meta">${esc(a.dev)}</span><br><span class="meta"><span class="star">★ ${fa(a.rating)}</span> · ${esc(a.cat)} · ${esc(a.size)}</span></span></button>`).join('');
+  $('#grid').innerHTML = l.map(a => `<button class="card" data-id="${esc(a.id)}"><span class="ico" style="background:${grad(a.color)}">${esc(a.icon)}</span><span><h3>${esc(a.name)}</h3><span class="meta">${esc(a.dev)}</span><br><span class="meta">${a.rating ? `<span class="star">★ ${fa(a.rating)}</span> · ` : ''}${esc(a.cat)}${a.official ? ' · منبع رسمی' : ''}</span></span></button>`).join('');
   $('#empty').hidden = l.length > 0;
   $('#featWrap').hidden = !!q || st.cat !== 'همه';
 }
@@ -25,9 +25,9 @@ function chips() {
 function open(id) {
   const a = st.apps.find(x => x.id === id); if (!a) return;
   $('#dlgBody').innerHTML = `<div class="d-top"><span class="ico" style="background:${grad(a.color)}">${esc(a.icon)}</span><div><h2 style="margin:0">${esc(a.name)}</h2><div class="meta">${esc(a.dev)}</div></div></div>
-  <div class="d-body"><div class="facts"><div><b class="star">★ ${fa(a.rating)}</b>امتیاز</div><div><b>${esc(a.downloads)}</b>دانلود</div><div><b>${esc(a.size)}</b>حجم</div><div><b>${esc(a.ver)}</b>نسخه</div></div>
-  <p>${esc(a.desc)}</p><p class="meta">آخرین به‌روزرسانی: ${esc(a.updated)} · دسته: ${esc(a.cat)}</p>
-  <div class="btns"><a class="btn p" href="${esc(a.dl)}" rel="noopener" download>دانلود APK</a><button class="btn s" id="share">اشتراک</button><button class="btn s" id="close">بستن</button></div></div>`;
+  <div class="d-body"><div class="facts"><div><b class="star">${a.rating ? '★ ' + fa(a.rating) : '—'}</b>امتیاز</div><div><b>${esc(a.downloads || '—')}</b>دانلود</div><div><b>${esc(a.size || '—')}</b>حجم</div><div><b>${esc(a.ver || '—')}</b>نسخه</div></div>
+  <p>${esc(a.desc)}</p><p class="meta">${a.updated ? 'آخرین به‌روزرسانی: ' + esc(a.updated) + ' · ' : ''}دسته: ${esc(a.cat)}</p>
+  <div class="btns"><a class="btn p" href="${esc(a.dl)}" rel="noopener noreferrer" target="_blank">${a.official ? 'دریافت از منبع رسمی' : 'دانلود APK'}</a><button class="btn s" id="share">اشتراک</button><button class="btn s" id="close">بستن</button></div></div>`;
   $('#dlg').showModal();
   history.replaceState(null, '', '#' + id);
   $('#close').onclick = () => $('#dlg').close();
