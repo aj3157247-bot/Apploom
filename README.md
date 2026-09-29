@@ -1,1 +1,20 @@
 # Apploom
+
+فروشگاه اپلیکیشن ایستا (static) برای GitHub Pages.
+
+## راه‌اندازی
+1. یک مخزن بسازید (مثلاً `apploom.github.io`) و همه فایل‌ها را آپلود کنید.
+2. Settings ← Pages ← Branch: `main` / root را فعال کنید.
+3. سایت روی `https://USERNAME.github.io` بالا می‌آید.
+
+## افزودن برنامه
+- فایل APK را در بخش **Releases** مخزن آپلود کنید و لینک مستقیمش را کپی کنید.
+- یک آیتم به `data/apps.json` اضافه کنید:
+  `id` (انگلیسی و یکتا)، `name`، `dev`، `cat`، `icon` (ایموجی)، `color`، `rating`، `size`، `ver`، `updated`، `downloads`، `desc`، `dl` (لینک دانلود)، و برای نمایش در بخش ویژه `"featured": true`.
+- دسته جدید را در آرایه `categories` هم بنویسید.
+
+## تست محلی
+`python3 -m http.server 8000` و سپس باز کردن `http://localhost:8000`
+
+## نکته
+برنامه‌های موجود در `apps.json` نمونه هستند؛ آن‌ها را با برنامه‌های واقعی جایگزین کنید.

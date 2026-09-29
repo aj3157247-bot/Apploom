@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apploom | فروشگاه اپلیکیشن</title>
+<meta name="description" content="Apploom؛ برنامه‌ها و بازی‌های اندروید را کشف و دانلود کنید.">
+<link rel="icon" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./"><img src="assets/logo.svg" alt="" width="34" height="34"><b>Apploom</b></a>
+  <label class="search"><span class="sr">جست‌وجو</span><input id="q" type="search" placeholder="نام برنامه یا سازنده را بنویسید" autocomplete="off"></label>
+  <button id="theme" class="ghost" aria-label="تغییر تم">◐</button>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <h1>برنامه‌ها را ببافید به زندگی‌تان</h1>
+    <p>بازی، ابزار و آموزش؛ همه در یک فروشگاه سبک و امن. بدون ثبت‌نام دانلود کنید.</p>
+    <div class="stats"><span><b id="nApps">0</b> برنامه</span><span><b id="nCats">0</b> دسته</span><span><b>رایگان</b> برای همه</span></div>
+  </div>
+</section>
+
+<main>
+  <section id="featWrap"><h2>پیشنهاد ویژه</h2><div id="feat" class="rail"></div></section>
+  <section>
+    <div class="tools">
+      <div id="chips" class="chips" role="tablist" aria-label="دسته‌بندی"></div>
+      <select id="sort" aria-label="مرتب‌سازی">
+        <option value="pop">پرطرفدارترین</option><option value="rate">بیشترین امتیاز</option><option value="new">جدیدترین</option><option value="name">نام</option>
+      </select>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>برنامه‌ای پیدا نشد. عبارت دیگری را جست‌وجو کنید یا دسته «همه» را بزنید.</p>
+  </section>
+</main>
+
+<footer>
+  <b>Apploom</b><span>فایل‌ها را فقط از سازنده‌های معتبر نصب کنید. برای نصب APK گزینه «نصب از منابع ناشناس» را فعال کنید.</span>
+  <a href="https://github.com/apploom" rel="noopener">GitHub</a>
+</footer>
+
+<dialog id="dlg"><div id="dlgBody"></div></dialog>
+<div id="toast" role="status"></div>
+<script src="assets/app.js"></script>
+</body>
+</html>
